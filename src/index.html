@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/ico" />
+    <title>Task Form</title>
+  </head>
+
+  <body>
+    <main
+      class="vh-100 d-flex justify-content-center align-items-center bg-white"
+    >
+      <form
+        class="col-9 d-flex flex-column bg-light rounded-2 align-items-center gap-2 p-4 shadow-lg"
+        id="form"
+      >
+        <h1 class="border-bottom">Форма отправки</h1>
+
+        <div class="w-100">
+          <label class="w-100 form-label" id="first-name-label">Имя:</label>
+          <input
+            class="w-100 form-control"
+            placeholder="Введите ваше имя"
+            type="text"
+            id="first-name"
+            required
+            maxlength="30"
+          />
+          <small class="muted text-warning d-none" id="first-name__hint"
+            >Допустимы только руссие и латинские буквы без спец. символов. Имя
+            от 2 букв.</small
+          >
+        </div>
+
+        <div class="w-100">
+          <label class="w-100 form-label" id="last-name__label">Фамилия:</label>
+          <input
+            class="w-100 form-control"
+            placeholder="Введите вашу фамилию"
+            type="text"
+            id="last-name"
+            required
+            maxlength="30"
+          />
+          <small class="muted text-warning d-none" id="last-name__hint"
+            >Допустимы только руссие и латинские буквы без спец. символов.
+            Фамилия от 3 букв.</small
+          >
+        </div>
+
+        <div class="w-100">
+          <label class="w-100 form-label" id="email-label">Email:</label>
+          <input
+            class="w-100 form-control"
+            placeholder="Введите ваш email"
+            type="email"
+            id="email"
+          />
+          <small class="muted text-warning d-none" id="email__hint"
+            >Некорректные данные.</small
+          >
+        </div>
+
+        <div class="w-100">
+          <label class="w-100 form-label" id="password-label">Пароль:</label>
+          <div class="input-group">
+            <input
+              class="form-control"
+              placeholder="Введите пароль"
+              type="password"
+              id="password"
+              required
+            />
+            <div class="input-group-text">
+              <input
+                class="form-check-input mt-0"
+                type="checkbox"
+                id="password-checkbox"
+              />
+            </div>
+          </div>
+          <small class="muted text-warning d-none" id="password__hint"
+            >Пароль обязан содержать одну цифру ,одну заглавную букву, одну
+            прописную букву и один спец. символ. Длинна пароля должна быть не
+            менее 8 символов.</small
+          >
+        </div>
+
+        <div class="w-100">
+          <label class="w-100 form-label" id="password-confirm-label"
+            >Подтверждение пароля:</label
+          >
+          <div class="input-group">
+            <input
+              class="form-control"
+              placeholder="Введите пароль"
+              type="password"
+              id="password-confirm"
+              required
+            />
+            <div class="input-group-text">
+              <input
+                class="form-check-input mt-0"
+                type="checkbox"
+                id="password-confirm-checkbox"
+              />
+            </div>
+          </div>
+          <small class="muted text-warning d-none" id="password-confirm__hint"
+            >Пароли не совпадают.</small
+          >
+        </div>
+
+        <div class="w-100">
+          <label class="w-100 form-label" id="birth-day-label"
+            >Дата рождения: </label
+          ><input
+            class="w-100 form-control"
+            type="date"
+            id="birth-day"
+            required
+          />
+          <small class="muted text-warning d-none" id="birth-day__hint"
+            >Не подходящий возраст.</small
+          >
+        </div>
+
+        <button
+          class="btn shadow-lg bg-primary"
+          type="submit"
+          id="form-button"
+          disabled
+        >
+          Отправить
+        </button>
+      </form>
+    </main>
+  </body>
+</html>

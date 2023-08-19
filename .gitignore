@@ -1,0 +1,10 @@
+Исключить node_modules
+/node_modules
+
+Исключить сгенерированные файлы Webpack
+/dist
+
+Исключить временные файлы
+/.DS_Store
+/.vscode/
+*.log
